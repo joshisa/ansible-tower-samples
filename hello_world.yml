@@ -11,7 +11,7 @@
           
           HOST Variables ("hostvars"):
           --------------------------------
-          {{ hostvars | to_nice_json }} 
+          hostvars["ec2_name"] | to_nice_json }}
     
       debug: 
         msg: "{{ msg.split('\n') }}"       
