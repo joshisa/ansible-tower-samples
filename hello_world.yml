@@ -5,15 +5,8 @@
       debug:
         msg: "Hello World!"
         
-    - name: Print some debug information 
-      vars: 
-        msg: |
-          
-          HOST Variables ("hostvars"):
-          --------------------------------
-          hostvars["ec2_name"] | to_nice_json }}
-    
+    - name: Print some debug information
       debug: 
-        msg: "{{ msg.split('\n') }}"       
+        msg: "{{ ec2_name }}"       
       tags: debug_info
 
