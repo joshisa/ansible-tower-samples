@@ -4,7 +4,7 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-      tasks:
+        
     - name: Print some debug information 
       vars: 
         msg: |
