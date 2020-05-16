@@ -7,6 +7,6 @@
         
     - name: Print some debug information
       debug: 
-        msg: "Stub for provisioning new instance in Ansible"       
+        msg: "Stub for provisioning new instance {{ EC2_NAME }} in Ansible"       
       tags: debug_info
 
